@@ -12,7 +12,7 @@ fprintf('\nSOAL 1: DERET TAYLOR e^0.3\n');
 fprintf('Nilai sebenarnya = %.12f\n', nilai_sebenarnya_exp);
 fprintf(' n       Aproksimasi          Galat Absolut       Galat Relatif (%%)\n');
 
-for n = 0:4s
+for n = 0:4
     jumlah_exp = jumlah_exp + x^n / factorial(n);
     galat_absolut = abs(nilai_sebenarnya_exp - jumlah_exp);
     galat_relatif = galat_absolut / abs(nilai_sebenarnya_exp) * 100;
